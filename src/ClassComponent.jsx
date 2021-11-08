@@ -1,8 +1,8 @@
 import './ClassComponent.css';
 import React from 'react';
 class PageClass extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             darkMode: false,
             text: '',
@@ -12,6 +12,7 @@ class PageClass extends React.Component {
     }
 
     componentDidMount() {
+        console.log(this.props)
         this.setState({
             text: "Let's Learn React",
         });
