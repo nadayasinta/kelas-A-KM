@@ -1,6 +1,7 @@
 import ClassComponent from './ClassComponent';
 import FunctionComponent from './FunctionComponent';
 import Component from './Component';
+import FormComponent from './FormComponent';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
                 </Route>
                 <Route path='/detail'>
                     <ClassComponent />
+                </Route>
+                <Route path='/form'>
+                    <FormComponent />
                 </Route>
                 <Route path='*'>
                     <div>Not Found</div>
